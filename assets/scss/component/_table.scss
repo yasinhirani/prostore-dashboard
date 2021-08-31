@@ -1,0 +1,9 @@
+tr{
+    td,th{
+        &:not(:first-child){
+            text-align: center;
+        }
+        min-width: 180px;
+        vertical-align: middle;
+    }
+}

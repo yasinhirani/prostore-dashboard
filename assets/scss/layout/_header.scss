@@ -1,0 +1,44 @@
+.main-header{
+    .fa-bell-o{
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: $danger;
+            border-radius: 50%;
+            right: 25px;
+            top: 0;
+        }
+    }
+}
+.avatar-img{
+    width: 38px;
+    img{
+        width: 100%;
+    }
+}
+#hamburger {
+    &:checked {
+        ~ .sidebar {
+            width: 0px;
+            flex: 0 0 0;
+        }
+    }
+}
+@include media-breakpoint-down(md) {
+    #hamburger {
+        &:checked {
+            ~ .sidebar {
+                width: 220px;
+                flex: 0 0 220px;
+                left: 0;
+                z-index: 100;
+            }
+            ~ .backdrop {
+                display: block;
+            }
+        }
+    }
+}
