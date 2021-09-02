@@ -2,7 +2,10 @@
     width: 230px;
     flex: 0 0 230px;
     transition: ease-in-out all .3s;
-    z-index: 9;
+    background-color: $secondary;
+    .sidebar-header{
+        white-space: nowrap;
+    }
     .main-logo{
         width: 200px;
         img{
